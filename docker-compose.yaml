@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  
+  lda:
+    build: .
+    restart: always
+    ports:
+      - "8888:8888"
+    container_name: lda 
+
+    volumes:
+      - ./:/work
